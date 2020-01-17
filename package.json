@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "build:client:dev": "npx webpack --config=_webpack/webpack.config.js --env=dev",
-    "build:client:prod": "npx webpack --config=_webpack/webpack.config.js --env=prod"
+    "build:client:prod": "npx webpack --config=_webpack/webpack.config.js --env=prod",
+    "build:client:devserver": "webpack-dev-server --config=_webpack/webpack.config.js --env=dev --open"
   },
   "repository": {
     "type": "git",
@@ -42,6 +43,7 @@
     "husky": "^4.0.10",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
