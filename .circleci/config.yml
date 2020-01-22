@@ -23,6 +23,8 @@ jobs:
       - run:
           name: Build
           command: npm run build:client:prod
+      - run:
+          name: Build
           command: npm run lint
 
 workflows:
