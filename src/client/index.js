@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import Game from './game';
 
 class App extends Component {
   render() {
-    return <h1>Hello, World</h1>;
+    return <div>
+      <Game />
+    </div>;
   }
 }
 
-render(<App />, document.getElementById('root'));
+render(<App />, document.getElementById('abcde'));
